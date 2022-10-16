@@ -12,7 +12,7 @@ This idea motivated me to try and create visual representations for geodesic flo
 One script uses Euler's method to approximate the curves from the geodesic equation. This has the limitation of requiring explicit geodesic equations to be derived for each surface - in this file the equations match the torus' geodesic equation. 
 This script can be found here in two copies: 'eulermethod.py' outputs a visual in matplotlib as well as vpython, while 'eulermethod_blend.py' is to be used in Blender and outputs the data points as Bezier curve object.
 
-Another script approaches the optimization problem enclosed in the geodesic equation directly. We look for a "minimal" path on a discretization of the given surface, using Dijkstra's Algorithm. At each vertex, the algorithm looks for the neighbor vertex minimizing not the Euclidean distance, but rather the distance between vectors being parallel transported between the respective tangent spaces. 
+Another script- 'dijkstramethod.py' - approaches the optimization problem enclosed in the geodesic equation directly. We look for a "minimal" path on a discretization of the given surface, using Dijkstra's Algorithm. At each vertex, the algorithm looks for the neighbor vertex minimizing not the Euclidean distance, but rather the distance between vectors being parallel transported between the respective tangent spaces. This script spits out visuals in mayavi.
 
 
 
